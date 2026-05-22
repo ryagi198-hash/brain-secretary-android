@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.BrainSecretary" parent="Theme.AppCompat.DayNight.NoActionBar">
+        <item name="colorPrimary">#A03E63</item>
+        <item name="colorPrimaryDark">#231815</item>
+        <item name="colorAccent">#EDDBE2</item>
+        <item name="android:statusBarColor">#231815</item>
+    </style>
+</resources>
