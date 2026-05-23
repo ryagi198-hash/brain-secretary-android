@@ -11,8 +11,8 @@ android {
         applicationId = "com.coop.brainsecretary"
         minSdk = 24
         targetSdk = 34
-        versionCode = 1
-        versionName = "1.0"
+        versionCode = 3
+        versionName = "1.1.0"  // GAS Code.gs APK_VERSION と同期
     }
 
     buildTypes {
