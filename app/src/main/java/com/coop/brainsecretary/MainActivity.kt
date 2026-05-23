@@ -35,6 +35,10 @@ class MainActivity : AppCompatActivity() {
         webView.settings.builtInZoomControls = true
         webView.settings.displayZoomControls = false
         webView.settings.mixedContentMode = android.webkit.WebSettings.MIXED_CONTENT_ALWAYS_ALLOW
+        // キャッシュ無効化 → GAS WebApp更新後も即最新を表示 (古いdeploymentキャッシュ問題対策)
+        webView.settings.cacheMode = android.webkit.WebSettings.LOAD_NO_CACHE
+        // WebViewのHTTPキャッシュを起動時に削除
+        webView.clearCache(true)
         webView.webViewClient = WebViewClient()
         webView.webChromeClient = WebChromeClient()
         webView.loadUrl(URL)
